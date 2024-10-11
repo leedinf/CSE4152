@@ -1,7 +1,7 @@
 #include "env.h"
 #include <bitset>
 using namespace std;
-
+ 
 int main() {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
@@ -105,8 +105,8 @@ int main() {
             }
             answer(map);
         }
-        else {//NÀº Â¦¼ö
-            for (int i = 0; i < N - 3; i += 2) {//¤·¤·
+        else {//Nï¿½ï¿½ Â¦ï¿½ï¿½
+            for (int i = 0; i < N - 3; i += 2) {//ï¿½ï¿½ï¿½ï¿½
                 link_wire(i, i + 1);
                 arr1.push_back({ i,i + 1 });
             }
@@ -152,7 +152,7 @@ int main() {
                     }
                 }
             }
-            for (int i = 0; i < N; i++) {//¾Æ·¡¼­µÎ°³°¡ÂðµûÀÓ N-1, N-2
+            for (int i = 0; i < N; i++) {//ï¿½Æ·ï¿½ï¿½ï¿½ï¿½Î°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ N-1, N-2
                 if (N - 2 != i && check_connectivity(N - 2, i)) {
                     map.push_back({ N - 2,rjin });
                     map.push_back({ N - 1,realjin });

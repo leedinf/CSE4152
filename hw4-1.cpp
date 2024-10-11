@@ -2,7 +2,7 @@
 #include <vector>
 #include <stack>
 using namespace std;
-
+ 
 bool can_rearrange_trains(int N, vector<int> &trains) {
     // TODO:
     stack<int> st;
